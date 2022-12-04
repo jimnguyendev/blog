@@ -36,5 +36,19 @@ export const theme = createTheme({
 				},
 			},
 		},
+		MuiLink: {
+			styleOverrides: {
+				root: {
+					color: 'black',
+
+					'&:hover': {
+						color: '#FF6464',
+					},
+				},
+			},
+			defaultProps: {
+				underline: 'hover',
+			},
+		},
 	},
 })
