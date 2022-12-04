@@ -1,22 +1,16 @@
 import { MainLayout } from '@/components/layout'
-import { NextPageWithLayout } from '@/models/common'
+import { NextPageWithLayout } from '@/models'
 import { Box } from '@mui/system'
-import { useRouter } from 'next/dist/client/router'
+import { HeroSection } from '@/components/home'
+import { RecentPosts } from '@/components/home/recent-posts'
 
 const Home: NextPageWithLayout = () => {
-	const router = useRouter()
-
-	function goToDetailPage() {
-		router.push({
-			pathname: '/posts/[postId]',
-			query: {
-				postId: 123,
-				ref: 'social',
-			},
-		})
-	}
-
-	return <Box>Home Page</Box>
+	return (
+		<Box>
+			<HeroSection />
+			<RecentPosts />
+		</Box>
+	)
 }
 
 Home.Layout = MainLayout
