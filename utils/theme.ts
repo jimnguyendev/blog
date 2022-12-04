@@ -41,7 +41,7 @@ export const theme = createTheme({
 				root: {
 					color: 'black',
 
-					'&:hover': {
+					'&:hover, &.active': {
 						color: '#FF6464',
 					},
 				},

@@ -14,6 +14,12 @@ export default class MyDocument extends Document {
 						rel="stylesheet"
 						href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
 					/>
+					<link
+						href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700&display=swap"
+						rel="stylesheet"
+					></link>
+					{/* eslint-disable-next-line @next/next/no-title-in-document-head */}
+					<title>JimDev Blog</title>
 				</Head>
 				<body>
 					<Main />
